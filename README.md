@@ -30,21 +30,28 @@ I made it so remote tools (SSH, remote desktop, Claude Code Remote Control) keep
 
 ## Install
 
-Download or clone this folder, then in Terminal:
+1. Go to [**Releases**](../../releases/latest) and download **`lidawake-<version>.zip`**.
+2. Double-click the zip in your Downloads folder to unzip it.
+3. Open **Terminal** (press ⌘ Space, type *Terminal*, press Return).
+4. Type `sudo bash ` (with a space at the end). **Don't press Return yet.**
+5. Drag **`install.sh`** from the unzipped folder into the Terminal window. Its path appears after what you typed.
+6. Press Return and type your Mac password. Nothing shows while you type, which is normal. Press Return again.
 
-```
-sudo bash install.sh
-```
+It runs a self-check first. You should see `OK: everything the helper relies on still works`, followed by a few log lines.
 
-It runs a self-check first. You should see `OK: everything the helper relies on still works`.
+To update later, download the new release and do the same steps. The new version replaces the old one.
 
 **Test it once:** close the lid while plugged in and make sure the Mac stays reachable. Then unplug it with the lid closed and check that it sleeps after about 10 minutes.
 
 ## Uninstall
 
+Same as installing, but type `sudo bash ` and drag in `install.sh`, then add ` uninstall` at the end before pressing Return:
+
 ```
-sudo bash install.sh uninstall
+sudo bash /path/to/install.sh uninstall
 ```
+
+This puts the Mac back to normal sleep.
 
 ## Check it anytime
 
